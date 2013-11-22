@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<merge xmlns:android="http://schemas.android.com/apk/res/android"
+       xmlns:shutter="http://schemas.android.com/apk/res-auto">
+    
+    <!-- Header -->
+    <LinearLayout android:layout_width="match_parent"
+                  android:layout_height="68dp"
+                  android:baselineAligned="false">
+
+        <com.sriramramani.shutter.optimized.OwnerView android:id="@+id/owner"
+							                android:layout_width="48dp"
+							                android:layout_height="48dp"
+							                android:layout_margin="10dp"
+							                android:clickable="true"/>
+
+        <LinearLayout android:layout_width="0dip"
+		              android:layout_height="wrap_content"
+		              android:layout_weight="1.0"
+		              android:orientation="vertical">
+            
+            <com.sriramramani.shutter.optimized.NameView android:id="@+id/name_info"
+                                               android:layout_width="match_parent"
+                                               android:layout_height="wrap_content"
+                                               android:textSize="18sp"
+									           android:paddingTop="12dp"
+									           android:textColor="#FF222222"
+									           android:singleLine="true"/>
+            
+            <com.sriramramani.shutter.optimized.PhotoInfoView android:id="@+id/photo_info"
+                                                    android:layout_width="match_parent"
+                                                    android:layout_height="wrap_content"
+                                                    android:layout_marginTop="2dp"
+                                                    android:textColor="#FF888888"
+                                                    android:textSize="12sp"/>
+            
+        </LinearLayout>
+        
+    </LinearLayout>
+
+    <!-- Content -->
+    <com.sriramramani.shutter.optimized.PhotoView android:id="@+id/photo_view"
+						                android:layout_width="match_parent"
+						                android:layout_height="200dp"
+						                android:background="#FFAAAAAA"
+						                android:scaleType="fitXY"
+						                android:clickable="true"/>
+
+    <LinearLayout android:layout_width="match_parent"
+                  android:layout_height="wrap_content"
+                  android:orientation="vertical"
+                  android:layout_marginLeft="1dp"
+                  android:layout_marginRight="1dp">
+
+	    <!-- Stats -->
+	    <LinearLayout android:layout_width="match_parent"
+	                  android:layout_height="48dp"
+	                  android:paddingTop="6dp"
+	                  android:paddingBottom="6dp"
+	                  android:paddingLeft="10dp"
+	                  android:paddingRight="6dp">
+	        
+	        <com.sriramramani.shutter.optimized.StatsView android:id="@+id/stats"
+	                                            android:layout_width="wrap_content"
+	                                            android:layout_height="match_parent"
+	                                            android:layout_gravity="left"
+	                                            android:textColor="#FF666666"
+                                                android:textSize="14sp"
+	                                            android:background="@drawable/highlight"
+	                                            android:clickable="true"/>
+	        
+	        <View android:layout_width="0dip"
+	              android:layout_height="match_parent"
+	              android:layout_weight="1.0"/>
+	        
+	        <com.sriramramani.shutter.optimized.ContactLayout android:id="@+id/contacts"
+	                                                android:layout_width="0dip"
+							                        android:layout_height="match_parent"
+							                        android:layout_gravity="right"
+							                        android:gravity="center_vertical|right"
+							                        android:background="@drawable/highlight"
+							                        android:clickable="true"/>
+
+	    </LinearLayout>
+	    
+	    <!-- Divider -->
+	    <View android:layout_width="match_parent"
+	          android:layout_height="1dp"
+	          android:layout_marginLeft="10dp"
+              android:layout_marginRight="10dp"
+	          android:background="#FFDDDDDD"/>
+	    
+	    <!-- Buttons -->
+	    <LinearLayout android:layout_width="match_parent"
+	                  android:layout_height="40dp">
+
+            <com.sriramramani.shutter.optimized.LikeButton android:id="@+id/like"
+                                                 android:layout_width="0dip"
+                                                 android:layout_height="match_parent"
+                                                 android:layout_weight="1.0"
+                                                 android:gravity="center"
+                                                 android:background="@drawable/action_button"
+                                                 shutter:image="@drawable/like"
+                                                 shutter:text="@string/button_like"
+                                                 android:clickable="true"/>
+	        
+	        <View android:layout_width="1dp"
+              android:layout_height="match_parent"
+              android:layout_marginTop="4dp"
+              android:layout_marginBottom="4dp"
+              android:background="#FFDDDDDD"/>
+	                   
+            <com.sriramramani.shutter.optimized.ActionButton android:layout_width="0dip"
+                                                   android:layout_height="match_parent"
+                                                   android:layout_weight="1.0"
+                                                   android:gravity="center"
+                                                   android:background="@drawable/action_button"
+                                                   shutter:image="@drawable/ic_comment"
+                                                   shutter:text="@string/button_comment"
+                                                   android:clickable="true"/>
+            
+	        <View android:layout_width="1dp"
+              android:layout_height="match_parent"
+              android:layout_marginTop="4dp"
+              android:layout_marginBottom="4dp"
+              android:background="#FFDDDDDD"/>
+	        
+	        <com.sriramramani.shutter.optimized.ActionButton android:layout_width="0dip"
+						                           android:layout_height="match_parent"
+						                           android:layout_weight="1.0"
+						                           android:gravity="center"
+						                           android:background="@drawable/action_button"
+						                           shutter:image="@drawable/ic_share"
+						                           shutter:text="@string/button_share"
+								                   android:clickable="true"/>
+
+	    </LinearLayout>
+
+    </LinearLayout>
+
+</merge>

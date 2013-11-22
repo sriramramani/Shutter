@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<merge xmlns:android="http://schemas.android.com/apk/res/android">
+
+       <ImageView android:id="@+id/action_button_image"
+                  android:layout_width="24dp"
+                  android:layout_height="24dp"
+                  android:duplicateParentState="true"/>
+
+       <TextView android:id="@+id/action_button_text"
+                 android:layout_width="wrap_content"
+                 android:layout_height="wrap_content"
+                 android:paddingLeft="4dp"
+                 android:textSize="14sp"
+                 android:textColor="#FF808080"/>
+
+</merge>

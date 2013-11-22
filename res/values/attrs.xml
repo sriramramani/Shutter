@@ -1,0 +1,12 @@
+<resources>
+
+    <declare-styleable name="ActionButton">
+        <attr name="image" format="reference" />
+        <attr name="text" format="reference"/>
+    </declare-styleable>
+    
+    <declare-styleable name="LikeButton">
+        <attr name="state_liked" format="boolean"/>
+    </declare-styleable>
+
+</resources>

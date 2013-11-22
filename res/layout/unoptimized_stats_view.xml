@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<merge xmlns:android="http://schemas.android.com/apk/res/android">
+
+       <ImageView android:layout_width="16dp"
+                  android:layout_height="16dp"
+                  android:src="@drawable/ic_like"/>
+       
+       <TextView android:id="@+id/likes"
+                 android:layout_width="wrap_content"
+	             android:layout_height="wrap_content"
+	             android:textColor="#FF666666"
+	             android:textSize="14sp"
+	             android:paddingLeft="2dp"
+	             android:paddingRight="12dp"/>
+       
+       <ImageView android:layout_width="16dp"
+                  android:layout_height="16dp"
+                  android:src="@drawable/ic_comment"/>
+       
+       <TextView android:id="@+id/comments"
+                 android:layout_width="wrap_content"
+	             android:layout_height="wrap_content"
+	             android:textColor="#FF666666"
+	             android:textSize="14sp"
+	             android:paddingLeft="2dp"/>
+</merge>

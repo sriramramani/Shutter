@@ -1,0 +1,7 @@
+<resources>
+
+    <drawable name="divider_color">#FFDDDDDD</drawable>
+ 
+    <drawable name="photo_overlay_pressed">#66000000</drawable>
+
+</resources>

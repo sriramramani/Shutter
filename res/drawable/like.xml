@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android"
+          xmlns:shutter="http://schemas.android.com/apk/res-auto">
+
+    <item shutter:state_liked="true"
+          android:drawable="@drawable/ic_liked"/>
+
+    <item shutter:state_liked="false"
+          android:drawable="@drawable/ic_like"/>
+
+</selector>
